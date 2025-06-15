@@ -9,16 +9,42 @@ h1{
 }
 #formDiv{
     text-align: center;
-    font-size: 25px;
     color: antiquewhite;
     background-color: rgba(132, 152, 149, 0.7);
     
 }
-#guestList{
+h2{
+    text-decoration: underline;
+    font-size: 40px;
+}
 
+li button{
+    margin-left: 10px;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+}
+
+#guestList{
+    font-size: 30px;
+}
+
+#inputDiv{
+    margin-top: auto;
 }
 input{
     height: 40px;
-    
+    width: 400px;  
+    border-radius: 6px;
+}
+button{
+    margin-top: 16px;
+    width: 154px;
+    height: 44px;
+    font-size: 25px;
+    background-color: aquamarine;
+}
+::placeholder{
+    font-size: 25px;
 }
 
