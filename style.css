@@ -11,7 +11,8 @@ h1{
     text-align: center;
     color: antiquewhite;
     background-color: rgba(132, 152, 149, 0.7);
-    
+    width: 60%;
+    justify-self: center;
 }
 h2{
     text-decoration: underline;
@@ -47,4 +48,5 @@ button{
 ::placeholder{
     font-size: 25px;
 }
+
 
