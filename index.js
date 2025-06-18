@@ -1,6 +1,6 @@
 document.addEventListener ('DOMContentLoaded', () => {
     document.querySelector('form') .addEventListener('submit', (event) => {
-        event.preventDefault()
+        event.preventDefault() // Prevents default actions
         const input = document.querySelector("#input");
         guestNameShower(input.value);
         input.value = "";
@@ -13,6 +13,8 @@ function guestNameShower(guestName) {
         alert("Guest list is full")    
         return
     }
+    // limits guest number
+
 
     let guestList = document.createElement("li");
 
@@ -34,7 +36,8 @@ function guestNameShower(guestName) {
       rsvpButton.textContent = "Not Attending";
       rsvpButton.style.backgroundColor = "lightcoral";
       rsvpButton.style.marginTop = "10px"
-    }
+    } 
+    // Makes RSVP button functional
 })
     let guestCategory = document.createElement("button")
     guestCategory.textContent = "Friend"
@@ -51,6 +54,7 @@ function guestNameShower(guestName) {
             guestCategory.textContent = "Friend"
             guestCategory.style.backgroundColor = "Yellow"
         }   
+        //Makes Guest category button functional
     });
     
     let deleteButton = document.createElement("button");
@@ -61,6 +65,7 @@ function guestNameShower(guestName) {
     function nameDeleter(event){
     event.target.parentElement.remove()
 }
+// Makes remove button functional
 
     let timeStamp = document.createElement("small")
     let now = new Date()
@@ -68,6 +73,7 @@ function guestNameShower(guestName) {
     timeStamp.style.marginLeft = "10px"
     timeStamp.style.color = "bisque"
 
+    //Creates timestamp
 
     let editButton = document.createElement("button")
     editButton.textContent = "Edit"
@@ -90,7 +96,7 @@ function guestNameShower(guestName) {
             guestList.replaceChild(editButton ,saveButton)
         })
     })
-
+    // Makes edit and save button functional
 
    
     list.appendChild(guestList);
@@ -101,6 +107,7 @@ function guestNameShower(guestName) {
     guestList.appendChild(rsvpButton)
     guestList.appendChild(timeStamp)
     
+    //Appends Child elements to parent element ("li")
 }
 
 
